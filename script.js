@@ -8,9 +8,9 @@ const past = document.querySelector('.past')
 const present = document.querySelector('.present')
 const future = document.querySelector('.future')
 if (hour < today){
-    textArea.innerHTML = past;
+    textArea.classList.add("past");
 }else if (hour === today){
-    textArea.innerHTML = present;
+    textArea.classList.add("present");
 }else{
-    textArea.innerHTML = future;
+    textArea.classList.add("future");
 }
